@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CareerBook 101</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="CareerBook 101 Logo">
+            <h1>CareerBook 101</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" id="homeLink">HOME</a></li>
+            <li><a href="#" id="QuizLink">QUIZ</a></li>
+            <li><a href="#" id="CareersLink">CAREERS</a></li>
+            <li><a href="#" id="loginLink">LOGIN</a></li>
+            <li><a href="#" id="signupLink">SIGN UP</a></li>
+            <li><a href="#" id="ProfileLink">PROFILE</a></li>
+            <li><a href="#" id="contactLink">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- Header 1 -->
+    <header>
+        <h2>Explore Careers</h2>
+        <input type="text" id="searchInput" placeholder="Search for a career...">
+    </header>
+
+    <div id="resultsContainer"></div>
+
+    <!-- Header 2 -->
+    <header class="header">
+        <div class="header-content">
+            <h1>CareerBook 101</h1>
+            <p class="header-description">Welcome to CareerBook 101, your ultimate guide to discovering, exploring, and
+                planning your dream career.
+                With CareerBook 101, embark on a transformative journey to uncover a world of endless possibilities.
+                Whether you're a student starting your career exploration or a professional seeking a new path, our
+                comprehensive platform is here to support you every step of the way.
+                Explore a vast array of careers, gain valuable insights, and unlock your true potential. Let CareerBook
+                101 be your compass as you navigate through the intricate
+                landscape of professions, empowering you to make informed decisions and shape a fulfilling future.
+                Get ready to embark on an exciting adventure with CareerBook 101!</p>
+        </div>
+    </header>
+
+    <!--Message & Instructions-->
+    <!-- Message -->
+    <section id="section-c" class="grid">
+        <div class="content-wrap">
+            <h2 class="content-title">We care for your educational needs</h2>
+            <p>On our app, we believe in the power of education to transform lives. We are committed to fostering a
+                supportive online community where students can thrive,
+                learn from one another, and develop essential skills for the future.
+                Join us on this educational journey and unlock your full potential.</p>
+
+            <p>Remember, your education matters, and we are here to help you every step of the way. Together, let's
+                make learning an engaging and rewarding experience.
+            </p>
+        </div>
+
+        <!-- Section B -->
+        <section id="section-b" class="grid">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="./Images/Career1.jfif" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Self-Reflection</h3>
+                            <p>Uncover your true potential by reflecting upon your unique experiences, aspirations, and
+                                ambitions. Our assessment delves deep into your personal attributes and reveals what
+                                makes you truly exceptional.</p>
+                            <p>Embark on a transformative journey of self-discovery and unlock your true potential. Our
+                                comprehensive assessment guides you through a series of thought-provoking questions
+                                designed to help you delve into
+                                your unique experiences, passions, and aspirations. By reflecting on these aspects,
+                                you'll gain a deeper understanding of yourself and uncover your inherent strengths,
+                                values, and interests. Self-reflection
+                                is the key to making informed career decisions that are aligned with your authentic
+                                self. Explore your inner landscape and embark on a path that truly resonates with who
+                                you are.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./Images/Career2.jfif" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Personalized Occupations</h3>
+                            <p>Discover the path that aligns with your strengths, interests, and personality traits. Our
+                                advanced matching algorithms analyze your profile and guide you towards careers that are
+                                a perfect fit for your individuality and potential.</p>
+                            <p>Experience the power of personalized career matching. Our advanced algorithms analyze
+                                your assessment results and profile, generating customized occupation recommendations
+                                exclusively for you. By taking into account factors such as your
+                                skills, preferences, and personality traits, we connect you with occupations that align
+                                with your unique qualities and aspirations. Discover handpicked matches that go beyond
+                                generic suggestions, providing you with exciting career paths
+                                that resonate with your true calling and potential. Take the guesswork out of your
+                                career journey and explore the possibilities that await you.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="./Images/Career3.jpg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Expansive Courses</h3>
+                            <p>Embark on an exploration of over 1,000 careers and degrees. Delve into detailed profiles
+                                that shed light on the individuals who thrive in each field and gain valuable insights
+                                into the skills, qualifications, and experiences that contribute to their success.
+                            <p>Delve into our vast library of over 1,000 careers and degrees, where knowledge meets
+                                opportunity. Immerse yourself in comprehensive profiles that offer valuable insights
+                                into a wide range of occupations. Gain a deeper understanding of the individuals who
+                                thrive in each career and unlock the secrets to their success. Explore the skills,
+                                qualifications, and experiences that contribute to their achievements, empowering you to
+                                make informed decisions about your own path. Whether you're exploring traditional
+                                career options or seeking emerging fields, our expansive library equips you with the
+                                knowledge and inspiration to explore, discover, and shape your future.</p>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Login section -->
+        <section id="loginSection" class="hidden">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Sign-Up section -->
+        <section id="signupSection" class="hidden">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!--Career Quiz-->
+        <h1>Career Quiz</h1>
+
+        <form id="quizForm">
+            <h2>Question 1:</h2>
+            <p>What type of work environment do you prefer?</p>
+            <input type="radio" name="q1" value="A">Fast-paced and dynamic<br>
+            <input type="radio" name="q1" value="B">Structured and organized<br>
+            <input type="radio" name="q1" value="C">Creative and flexible<br>
+            <input type="radio" name="q1" value="D">Helping and serving others<br>
+
+            <!-- Add more quiz questions here... -->
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="quizResult" class="hidden">
+            <h2>Your Career Recommendation:</h2>
+            <p id="resultText"></p>
+        </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
