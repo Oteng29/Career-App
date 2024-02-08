@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color: #333333;
+  background-color: #363333;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,11 +16,11 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #c5c1c1;
 }
 
 .logo img {
-  height: 40px;
+  height: 50px;
   margin-right: 10px;
 }
 
